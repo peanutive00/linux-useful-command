@@ -4,5 +4,8 @@ tail -f abc.log
 ###find a string that match from the log
 grep "string" abc.log
 
+###find a string that match from the log and turn the matched string to red
+grep --color=auto 'string' abc.log
+
 ###keep printing tail from the log while find a string
 tail -f abc.log | grep "string"
